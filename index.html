@@ -74,11 +74,33 @@
 					<section id="tm-section-1" class="tm-section">
 						<div class="ml-auto">
 							<header class="mb-4"><h1 class="tm-text-shadow">Login</h1></header>
-							<form id="myForm" action="welcome.html" onsubmit="return validate(contact)">
+							<form id="myForm" method= "get" onsubmit="return validate(contact)">
 							  Email id:<br> <input type="email" id="idtext" value=""><br>
 							  Password:<br> <input type="password" id="passtext" value=""><br><br>
-							  <input type="submit" value="Submit">
+							  <input type="submit" value="Submit" onclick = "validate()">
 							</form>
+							<script type = "text/javascript">
+
+							function validate(){
+
+								var user = document.getElementById("idtext");
+								var pass = document.getElementById("passtext");
+
+								var tuser = ["test@gmail.com","shikha@fieldassist.in","anup@fieldassist.in"];
+								var tpass = ["test","admin","admin"];
+
+								for (var i=0; i< tuser.length;i++ ){
+									if ((user.value==tuser[i]) && (pass.value==tpass[i])){
+										window.open("welcome.html");
+									}
+									else {
+										alert("wrong credentials");
+										break;
+									}
+								}
+							}
+
+							</script>
 							<script type = "test/javascript">
 							function validate(contact){
 							   var email = form.email.value;

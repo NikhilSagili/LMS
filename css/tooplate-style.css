@@ -18,6 +18,13 @@ body {
     background: #222222;
 }
 
+img {
+    float: left;
+    width:  100px;
+    height: 100px;
+    object-fit: cover;
+}
+
 #preload-01 { background: url(../img/constructive_bg_01.jpg) no-repeat -9999px -9999px; }
 #preload-02 { background: url(../img/constructive_bg_02.jpg) no-repeat -9999px -9999px; }
 #preload-03 { background: url(../img/constructive_bg_03.jpg) no-repeat -9999px -9999px; }
