@@ -58,7 +58,7 @@ http://www.tooplate.com/view/2102-constructive
 								</a>
 							</li>
 							<li>
-								<a href="#about" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-2">
+								<a href="#about" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-3">
 									<i class="fas fa-users tm-nav-fa-icon"></i>
 									<span>Update</span>
 								</a>
@@ -94,27 +94,38 @@ http://www.tooplate.com/view/2102-constructive
 							<header class="mb-4"><h1 class="tm-text-shadow">Welcome Trainee</h1></header>
 							<div class="tm-img-container">
 
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/html.png" alt="Image" class="img-fluid" style="width:200px;height:200px;"></a>
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/JS.png" alt="Image" class="img-fluid" style="width:150px;height:150px;"></a>
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/sql.png" alt="Image" class="img-fluid" style="width:300px;height:150px;"></a>
-									<a  class="tm-slider-img"><img src="img/add.png" alt="Image" class="img-fluid" style="width:50px;height:50px;"></a>
-
-		
-							</div>
-						</div>
-					</section>
-
-
-					<section id="tm-section-2" class="tm-section">
-						<div class="ml-auto">
-							<header class="mb-4"><h1 class="tm-text-shadow">Welcome Trainee</h1></header>
-							<div class="tm-img-container">
-
 									<a href="htmlupdate.html" class="tm-slider-img"><img src="img/html.png" alt="Image" class="img-fluid" style="width:200px;height:200px;"></a>
 									<a href="JSupdate.html" class="tm-slider-img"><img src="img/JS.png" alt="Image" class="img-fluid" style="width:150px;height:150px;"></a>
 									<a href="sqlupdate.html" class="tm-slider-img"><img src="img/sql.png" alt="Image" class="img-fluid" style="width:300px;height:150px;"></a>
 
 							</div>
+
+							<script type = "test/javascript">
+							function validate(contact){
+							   var email = form.email.value;
+							   var message = form.password.value;
+							   console.log(email)
+
+							   if (name.length == 0 || name.length > 200)
+							   {alert ("You must enter a name.");
+							   return false;
+							   }
+
+							   if (email.length == 0 || email.length > 200)
+							   {alert ("You must enter a email.");
+							   return false;
+							   }
+
+							   if (message.length == 0)
+							   {alert ("You must enter a message.");
+							   return false;
+							   }
+
+							   return true;
+							}
+							</script>
+
+							<!-- data-nav-link holds the ID of nav item, which means this link should behave the same as that nav item  -->
 						</div>
 					</section>
 
@@ -189,6 +200,13 @@ http://www.tooplate.com/view/2102-constructive
 					<section id="tm-section-6" class="tm-section">
           <h1> HAVE A GOOD DAY</h1>
           <p><a href="index.html">LOGOUT</a></p>
+          <script type = "text/javascript" >
+          function preventBack(){window.history.forward();}
+          setTimeout("preventBack()", 0);
+          window.onunload=function(){null};
+          </script>
+
+
 					</section>
 
 

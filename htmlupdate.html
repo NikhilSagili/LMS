@@ -1,8 +1,65 @@
 <!DOCTYPE html>
 <html>
-<body>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<h1>Update HTML here</h1>
+  <title>LMS</title>
 
-</body>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
+  <link rel="stylesheet" href="css/fontawesome-all.min.css">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <link rel="stylesheet" href="css/tooplate-style.css">
+  <style>
+  body {
+    background-image: url('img/constructive_bg_01.jpg');
+  }
+  </style>
+</head>
+
+
+<div class = "container-fluid tm-main">
+  <div class="ml-auto">
+
+    <header class="mb-4"><h1 class="tm-text-shadow">HTML update</h1></header>
+    <form id="myForm" action="welcome.html" onsubmit="return validate()" method="post">
+      Source*: <input type="text" name="sourcename" value=""><br><br>
+      Source URL: <input type="url" name="urlname" value=""><br><br>
+      Key points*: <input type="text" name = "keyptsname" value=""><br><br>
+      Summary: <br> <input type="text" name = "Summaryname" value=""><br><br>
+			Progress*: <input type="number" name="progress" min="0" max="100"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <script type = "text/javascript">
+    function validate(){
+       var source = document.forms['myForm']['sourcename'].value;
+			 var keypoints = document.forms['myForm']['keyptsname'].value;
+			 var prog = document.forms['myForm']['progress'].value;
+
+       if (source.length == 0 || source.length > 200)
+       {alert ("You must enter a source.");
+       return false;
+       }
+
+       if (keypoints.length == 0 || keypoints.length > 200)
+       {alert ("You must enter the key points.");
+       return false;
+       }
+
+			 if (prog == 0 )
+       {alert ("You must enter the progress.");
+       return false;
+       }
+
+       return true;
+    }
+    </script>
+
+
+</div>
+</div>
 </html>
