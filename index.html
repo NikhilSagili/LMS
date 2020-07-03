@@ -86,8 +86,8 @@
 								var user = document.getElementById("idtext");
 								var pass = document.getElementById("passtext");
 
-								var tuser = ["test@gmail.com"];
-								var tpass = ["test"];
+								var tuser = ["test@gmail.com","shikha@fieldassist.in","anup@fieldassist.in"];
+								var tpass = ["test","admin","admin"];
 
 								for (var i=0; i< tuser.length;i++ ){
 									if ((user.value==tuser[i]) && (pass.value==tpass[i])){
@@ -101,24 +101,19 @@
 							}
 
 							</script>
-							<script type = "text/javascript">
+							<script type = "test/javascript">
 							function validate(contact){
-							   var email = form.email.value;
-							   var message = form.password.value;
+							   var email = document.getElementById("idtext").value;
+							   var password = var pass = document.getElementById("passtext").value;
 							   console.log(email)
-
-							   if (name.length == 0 || name.length > 200)
-							   {alert ("You must enter a name.");
-							   return false;
-							   }
 
 							   if (email.length == 0 || email.length > 200)
 							   {alert ("You must enter a email.");
 							   return false;
 							   }
 
-							   if (message.length == 0)
-							   {alert ("You must enter a message.");
+							   if (password.length == 0)
+							   {alert ("You must enter a password.");
 							   return false;
 							   }
 
