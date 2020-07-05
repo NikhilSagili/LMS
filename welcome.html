@@ -6,13 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Welcome</title>
-<!--
 
-Template 2102 Constructive
-
-http://www.tooplate.com/view/2102-constructive
-
--->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
 	<link rel="stylesheet" href="css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="bootstrap.min.css">
@@ -26,7 +20,6 @@ http://www.tooplate.com/view/2102-constructive
 
 	if(navigator.userAgent.indexOf('MSIE')!==-1
 		|| navigator.appVersion.indexOf('Trident/') > 0){
-   		/* Microsoft Internet Explorer detected in. */
    		alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
    		renderPage = false;
 	}
@@ -52,31 +45,31 @@ http://www.tooplate.com/view/2102-constructive
 					<nav id="tmMainNav" class="tm-main-nav">
 						<ul>
 							<li>
-								<a href="#login" id="tmNavLink1" class="scrolly active" data-bg-img="constructive_bg_01.jpg" data-page="#tm-section-1">
+								<a href="#lernings" id="tmNavLink1" class="scrolly active" data-bg-img="1.jpg" data-page="#tm-section-1">
 									<i class="fas fa-home tm-nav-fa-icon"></i>
 									<span>Learnings</span>
 								</a>
 							</li>
 							<li>
-								<a href="#about" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-2">
+								<a href="#update" class="scrolly" data-bg-img="constructive_bg_03.jpg" data-page="#tm-section-2">
 									<i class="fas fa-users tm-nav-fa-icon"></i>
 									<span>Update</span>
 								</a>
 							</li>
 							<li>
-								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
+								<a href="#inbox" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-4">
 									<i class="fas fa-comments tm-nav-fa-icon"></i>
 									<span>Inbox</span>
 								</a>
 							</li>
 							<li>
-								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-5">
+								<a href="#target" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-5">
 									<i class="fas fa-comments tm-nav-fa-icon"></i>
 									<span>Target</span>
 								</a>
 							</li>
 							<li>
-								<a href="#contact" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-6">
+								<a href="#logout" class="scrolly" data-bg-img="constructive_bg_04.jpg" data-page="#tm-section-6">
 									<i class="fas fa-comments tm-nav-fa-icon"></i>
 									<span>Logout</span>
 								</a>
@@ -90,29 +83,107 @@ http://www.tooplate.com/view/2102-constructive
 
 					<!-- section 1 -->
 					<section id="tm-section-1" class="tm-section">
-						<div class="ml-auto">
-							<header class="mb-4"><h1 class="tm-text-shadow">Welcome Trainee</h1></header>
-							<div class="tm-img-container">
+						<h1><b><mark> Hello Trainee,</mark></b></h1><br><br><br>
+						<head>
+						<style>
+						body {
+						  font-family: Arial, Helvetica, sans-serif;
+						}
 
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/html.png" alt="Image" class="img-fluid" style="width:200px;height:200px;"></a>
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/JS.png" alt="Image" class="img-fluid" style="width:150px;height:150px;"></a>
-									<a href="#" onClick="MyWindow=window.open('progress.html','MyWindow','width=500,height=200'); return false;"><img src="img/sql.png" alt="Image" class="img-fluid" style="width:300px;height:150px;"></a>
-									<a  class="tm-slider-img"><img src="img/add.png" alt="Image" class="img-fluid" style="width:50px;height:50px;"></a>
+						.flip-card {
+						  background-color: transparent;
+						  width: 200px;
+						  height: 200px;
+						  perspective: 1000px;
+						}
 
-		
-							</div>
+						.flip-card-inner {
+						  position: relative;
+						  width: 100%;
+						  height: 100%;
+						  text-align: center;
+						  transition: transform 0.6s;
+						  transform-style: preserve-3d;
+						  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+						}
+
+						.flip-card:hover .flip-card-inner {
+						  transform: rotateY(180deg);
+						}
+
+						.flip-card-front, .flip-card-back {
+						  position: absolute;
+						  width: 100%;
+						  height: 100%;
+						  -webkit-backface-visibility: hidden;
+						  backface-visibility: hidden;
+						}
+						.flip-card-front {
+						  background-color: #bbbbbb00;
+						  color: black;
+						}
+
+						.flip-card-back {
+						  background-color: #707273;
+						  color: white;
+						  transform: rotateY(180deg);
+						}
+						</style>
+						</head>
+						<body>
+						<div class="row">
+							<div class="column">
+						<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front">
+					      <img src="img/html.png" alt="Avatar" style="width:200px;height:200px;">
+					    </div>
+					    <div class="flip-card-back">
+								<label for="file">Progress:</label>
+								<progress id="file" value=32 max="100"> 32% </progress>  <i><b>32%</b></i>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div class="column">
+					<div class="flip-card">
+					<div class="flip-card-inner">
+						<div class="flip-card-front">
+							<img src="img/JS.png" alt="Avatar" style="width:200px;height:200px;">
 						</div>
+						<div class="flip-card-back">
+							<label for="file">Progress:</label>
+							<progress id="file" value=50 max="100"> 50% </progress>  <i><b>50%</b></i>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="column">
+				<div class="flip-card">
+				<div class="flip-card-inner">
+					<div class="flip-card-front">
+						<img src="img/sql.png" alt="Avatar" style="width:200px;height:200px;">
+					</div>
+					<div class="flip-card-back">
+						<label for="file">Progress:</label>
+						<progress id="file" value=95 max="100"> 95% </progress>  <i><b>95%</b></i>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+				</body>
 					</section>
 
 
 					<section id="tm-section-2" class="tm-section">
 						<div class="ml-auto">
-							<header class="mb-4"><h1 class="tm-text-shadow">Welcome Trainee</h1></header>
+							<header class="mb-4"><h1 class="tm-text-shadow"><b><i>Update your learnings here... </i></b></h1><br></header>
 							<div class="tm-img-container">
 
-									<a href="htmlupdate.html" class="tm-slider-img"><img src="img/html.png" alt="Image" class="img-fluid" style="width:200px;height:200px;"></a>
-									<a href="JSupdate.html" class="tm-slider-img"><img src="img/JS.png" alt="Image" class="img-fluid" style="width:150px;height:150px;"></a>
-									<a href="sqlupdate.html" class="tm-slider-img"><img src="img/sql.png" alt="Image" class="img-fluid" style="width:300px;height:150px;"></a>
+									<a href="htmlupdate.html" class="tm-slider-img"><img src="img/html.png" alt="Image"  style="width:200px;height:200px;"></a>
+									<a href="JSupdate.html" class="tm-slider-img"><img src="img/JS.png" alt="Image" style="width:200px;height:200px;"></a>
+									<a href="sqlupdate.html" class="tm-slider-img"><img src="img/sql.png" alt="Image"  style="width:200px;height:200px;"></a>
 
 							</div>
 						</div>
@@ -187,7 +258,8 @@ http://www.tooplate.com/view/2102-constructive
 
 
 					<section id="tm-section-6" class="tm-section">
-          <h1> HAVE A GOOD DAY</h1>
+
+          <h1><b><mark> HAVE A GOOD DAY</mark></b></h1>
           <p><a href="index.html">LOGOUT</a></p>
 					</section>
 
